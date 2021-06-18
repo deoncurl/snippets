@@ -1,0 +1,74 @@
+:root {
+  background: #333;
+  color: #fff;
+  font-family: monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 80vh;
+}
+
+h1 {
+  margin-bottom: 5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 40vh;
+}
+
+button {
+  height: 2rem;
+  background: lightskyblue;
+  color: #333;
+  font-size: 1.1rem;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.square {
+  height: 10rem;
+  width: 10rem;
+  background: red;
+}
+
+.active {
+  background: forestgreen;
+  animation: rotate 5s linear infinite;
+}
+
+.pause {
+  background: red;
+  animation-play-state: paused;
+}
+
+@keyframes rotate {
+  25% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  75% {
+    transform: rotate(135deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
