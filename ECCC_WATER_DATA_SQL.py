@@ -33,4 +33,3 @@ q = cur.execute('''
 ''')
 
 print(q.fetchall())
-
