@@ -1,4 +1,5 @@
 import sqlite3
+import pandas as pd
 
 con = sqlite3.connect('./hydat/Hydat.sqlite3')
 cur = con.cursor()
